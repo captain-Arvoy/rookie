@@ -7,3 +7,5 @@
 - Aditya Roshan Dash
 - Vishnu Prasad Korada
 - Ipsita Nayak
+they are friends
+aditya love kenya
