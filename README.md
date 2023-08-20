@@ -1,11 +1,3 @@
-# project-Martini
-- Create a branch with your name and then add your code to the branch
-- git push the your branch name\
-- this is my first commit
-
-## Contributors
-- Aditya Roshan Dash
-- Vishnu Prasad Korada
-- Ipsita Nayak
-they are friends
-aditya love kenya
+# Project-Martini
+using Node-js and tailwind 
+### check the my-app/src/app/page.js for the code
