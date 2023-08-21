@@ -1,3 +1,6 @@
 # Project-Martini
-using Node-js and tailwind 
-### check the my-app/src/app/page.js for the code
+using Next js and tailwind 
+## Docs
+- my-app/src/app/ contains all the codes.
+- Next js follows file based routing, it means each folder is a route, hence we do not need to configure "server.js" as in express
+*Enjoy!!*
