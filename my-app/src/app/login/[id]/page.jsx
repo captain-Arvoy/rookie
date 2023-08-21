@@ -1,5 +1,5 @@
-export default function page({ arg}){
+export default function page({ params }){
   return(
-    <h1> Argument = {} </h1>
+    <h1> Argument = {params.id} </h1>
   )
 }
