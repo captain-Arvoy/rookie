@@ -9,18 +9,10 @@ export default function signup(){
   })
   const handleSubmit= async(e) => {
     e.preventDefault()
+    console.log(user.email)
     try{
-      const response = await fetch("/api/users/signup",{
-        method:'POST',
-        headers:{
-          'Content-Type':'application/json'
-        },
-        body:{
-          user
-        }
-      }
-      )
-    } catch (error){
+      const response = await axios.post("api/users/signup",JSON.stringify(user))
+      }catch (error){
       console.log("Error in post request")
     }
   }
@@ -40,7 +32,7 @@ export default function signup(){
             // pattern='[a-z0-9]@gmail\.com'
             className="bg-slate-100 p-2 rounded border-2 border-slate-500"
             // title="<name>@<domain-name>.com"
-            onChange={(e)=>{setUser({email:e.target.value})}}
+            onChange={(e)=>{setUser({email:e.target.value});console.log(user.email)}}
           /></div>
           <div className="flex flex-col gap-2 text-lg">
           <label 
@@ -54,7 +46,7 @@ export default function signup(){
             required
             pattern='[0-9]{10,10}'
             title="10 digits only"
-            onChange={(e)=>{setUser({phone:e.target.value})}}
+            onChange={(e)=>{setUser({phone:e.target.value});console.log(user.phone)}}
             className="bg-slate-100 p-2 rounded border-2 border-slate-500"
           /></div>
           <button 
